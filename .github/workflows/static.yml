@@ -41,3 +41,17 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        #0 C:\xampp5\htdocs\marketing\wp-content\plugins\simply-static\src\class-ss-plugin.php(384): FilesystemIterator->__construct('')
+#1 C:\xampp5\htdocs\marketing\wp-includes\class-wp-hook.php(324): Simply_Static\Plugin->maybe_clear_directory('')
+#2 C:\xampp5\htdocs\marketing\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 C:\xampp5\htdocs\marketing\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp5\htdocs\marketing\wp-content\plugins\simply-static\src\tasks\class-ss-setup-task.php(58): do_action('ss_after_setup_...')
+#5 C:\xampp5\htdocs\marketing\wp-content\plugins\simply-static\src\class-ss-archive-creation-job.php(154): Simply_Static\Setup_Task->perform()
+#6 C:\xampp5\htdocs\marketing\wp-content\plugins\astra-sites\inc\lib\starter-templates-importer\importer\helpers\wp-background-process.php(321): Simply_Static\Archive_Creation_Job->task('setup')
+#7 C:\xampp5\htdocs\marketing\wp-content\plugins\astra-sites\inc\lib\starter-templates-importer\importer\helpers\wp-background-process.php(181): WP_Background_Process->handle()
+#8 C:\xampp5\htdocs\marketing\wp-includes\class-wp-hook.php(324): WP_Background_Process->maybe_handle('')
+#9 C:\xampp5\htdocs\marketing\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#10 C:\xampp5\htdocs\marketing\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#11 C:\xampp5\htdocs\marketing\wp-admin\admin-ajax.php(192): do_action('wp_ajax_wp_arch...')
+#12 {main}
+  
